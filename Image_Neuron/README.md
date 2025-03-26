@@ -39,6 +39,6 @@ These stores are located in the Bay Area of ​​California, including San Jose
 ![Plot1_Store Distribution](https://github.com/user-attachments/assets/6c3709dc-b042-4bef-9cda-f26d41662155)
 ### Metadata
 The metadata contains additional image information (image name, store name) and store attributes (such as store name, category, geographical location, etc.), image quality scores (such as NIMA Score, Paq2piq Scores), and related image keywords (Strength, Human Eyes Focus, Suggestions) for subsequent analysis.
-![image](https://github.com/user-attachments/assets/e5275bbd-e96e-4a9b-ba18-0cfc8dbbf30e)
+           ![image](https://github.com/user-attachments/assets/e5275bbd-e96e-4a9b-ba18-0cfc8dbbf30e)
 
 
