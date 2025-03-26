@@ -1,10 +1,11 @@
 # Store Front Image Attention & Aesthetics Analysis With Neuron Flatform
 Table of Contents
 1. Overview
-2. Data Collection
-3. Basic EDA
-4. Label Prediction Model
-5. Model Performance
+2. Necessary Libraries
+3. Data Collection
+4. Basic EDA
+5. Label Prediction Model
+6. Model Performance
 
 ## Overview
 This phase of the research focuses on validating the label prediction models used to classify storefront neuron improvement suggestions. By evaluating multiple classification models, the goal is to determine the most effective approach for predicting enhancement recommendations based on image and text features.
@@ -30,6 +31,47 @@ Performance Evaluation:
 3. Insights into how image aesthetics and attention-based factors influence prediction accuracy.
 
 By systematically comparing these models, this validation step ensures the reliability of AI-driven recommendations, supporting small businesses in optimizing their storefront designs through data-driven insights.
+
+## Necessary Libraries
+### Front Door Image Info_EDA.ipynb
+```python
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import geopandas as gpd
+import matplotlib.pyplot as plt
+import missingno as msno
+import pyogrio 
+from collections import Counter
+from wordcloud import WordCloud
+import re
+from nltk.corpus import stopwords
+from matplotlib.colors import LinearSegmentedColormap
+import nltk
+```
+### Prior_Image_Label_Prediction.ipynb & Post_Image _Label_Prediction_Neuron.ipynb
+```python
+import pandas as pd
+import numpy as np 
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+import gensim.corpora as corpora
+from gensim.models.coherencemodel import CoherenceModel
+from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKFold
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
+from sklearn.metrics import classification_report, roc_curve, auc, confusion_matrix, accuracy_score, roc_auc_score
+from sklearn.feature_selection import mutual_info_classif
+from sklearn.impute import SimpleImputert
+from imblearn.over_sampling import SMOTE 
+```
 
 ## Data Collection
 ### Data Source
@@ -87,6 +129,11 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ### Fit Label Prediction Model
 ![image](https://github.com/user-attachments/assets/47374c81-dd63-4daa-8554-1af8100d4a2c)
 
+## Model Performance
+### Prior Topics Prediction Model
+![image](https://github.com/user-attachments/assets/2f18562b-6f04-4c18-879b-8c7b8c9d6208)
+
+### Post Topics Prediction Model
 
 
 
