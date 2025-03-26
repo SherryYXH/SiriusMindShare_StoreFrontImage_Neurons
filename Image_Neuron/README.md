@@ -39,8 +39,8 @@ These stores are located in the Bay Area of ​​California, including San Jose
 ![image](https://github.com/user-attachments/assets/f8b9c2f5-13d7-4f9f-bf75-0b3bfd098525)
 
 ### Metadata
-The metadata contains additional image information (image name, store name) and store attributes (such as store name, category, geographical location, etc.), image quality scores (such as NIMA Score, Paq2piq Scores), and related image keywords (Strength, Human Eyes Focus, Suggestions) for subsequent analysis.
-           ![image](https://github.com/user-attachments/assets/e5275bbd-e96e-4a9b-ba18-0cfc8dbbf30e)
+The metadata contains additional image information (image name, store name) and store attributes (such as store name, category, geographical location, etc.), image quality scores (such as NIMA Score, Paq2piq Scores), and related image keywords (Strength, Human Eyes Focus, Suggestions) for subsequent analysis. 
+![image](https://github.com/user-attachments/assets/e5275bbd-e96e-4a9b-ba18-0cfc8dbbf30e)
 ### Neuron AI Processed Image
 ![IMG_7515](https://github.com/user-attachments/assets/c5b47e22-9a7b-48a9-892d-e7ba4444f79f)
 Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
