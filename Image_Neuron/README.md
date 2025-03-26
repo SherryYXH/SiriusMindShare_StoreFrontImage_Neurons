@@ -131,6 +131,7 @@ X = vectorizer.fit_transform(df['Keywords'].dropna())
 texts = [text.split(",") for text in df['Keywords'].dropna()]
 dictionary = corpora.Dictionary(texts)
 corpus = [dictionary.doc2bow(text) for text in texts]
+
 #  Function to compute coherence score dynamically
 def compute_coherence_score(n_topics):
     lda_model = LatentDirichletAllocation(n_components=n_topics, random_state=42)
@@ -142,13 +143,16 @@ def compute_coherence_score(n_topics):
         return 0  # Prevent empty topics from affecting coherence
     coherence_model = CoherenceModel(topics=topic_word_ids, texts=texts, dictionary=dictionary, coherence='c_v')
     return coherence_model.get_coherence()
+
 #  Compute coherence scores for a range of topics
 topic_range = range(3, 12)  # Testing topics from 3 to 11
 coherence_scores = [compute_coherence_score(n) for n in topic_range]
+
 #  Get the top 3 best topic counts based on coherence scores
 top_3_indices = np.argsort(coherence_scores)[-3:][::-1]  # Get indices of top 3 scores
 top_3_topics = [topic_range[i] for i in top_3_indices]
 print(f" Best 3 topic counts based on coherence score: {top_3_topics}")
+
 #  Function to apply LDA and extract topics dynamically
 def apply_lda(n_components, X, vectorizer):
     """Train LDA model and return topic assignments and extracted topics"""
@@ -165,6 +169,7 @@ def apply_lda(n_components, X, vectorizer):
     # Assign topics to each row in the dataset
     topic_assignments = lda.transform(X).argmax(axis=1)
     return topic_assignments, topics_dict
+
 #  Apply LDA for the **top 3 best coherence scores**
 topics_summary = {}
 for n_topics in top_3_topics:
