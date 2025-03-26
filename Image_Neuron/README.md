@@ -131,9 +131,22 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 
 ## Model Performance
 ### Prior Topics Prediction Model
-![image](https://github.com/user-attachments/assets/2f18562b-6f04-4c18-879b-8c7b8c9d6208)
+![image](https://github.com/user-attachments/assets/82da199a-6270-46e3-a091-3e66b27f356c)
 
 ### Post Topics Prediction Model
+#### Mutual Information Scores Of Four Neuron_* Variables
+![image](https://github.com/user-attachments/assets/6127cabc-e239-4689-b618-9b0591ed9656)
+
+#### Post Topics Prediction Model Without All Four Neuron_* Variables
+![image](https://github.com/user-attachments/assets/9e6094a1-7ce7-422c-80c1-4bb2c584da74)
+#### Post Topics Prediction Model Without Clarity & Cognitive Demand
+![image](https://github.com/user-attachments/assets/6041986c-caca-446a-9486-0e32dd00367c)
+#### Post Topics Prediction Model With All Four Neuron_* Variables
+![image](https://github.com/user-attachments/assets/ec2c54b2-d773-44db-9153-d125a668b366)
+
+
+
+
 
 
 
