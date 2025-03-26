@@ -25,8 +25,17 @@ Performance Evaluation:
 3. Feature Analysis: Interpreting key contributors to model decisions.
 
 ### Expected Outcomes
-Validation of model effectiveness in predicting neuron improvement suggestions.
-Identification of the best-performing model based on evaluation metrics.
-Insights into how image aesthetics and attention-based factors influence prediction accuracy.
+1. Validation of model effectiveness in predicting neuron improvement suggestions.
+2. Identification of the best-performing model based on evaluation metrics.
+3. Insights into how image aesthetics and attention-based factors influence prediction accuracy.
 
 By systematically comparing these models, this validation step ensures the reliability of AI-driven recommendations, supporting small businesses in optimizing their storefront designs through data-driven insights.
+
+## Data Collection
+### Data Source
+144 images were collected, covering three store types: restaurant, retail, and Salon.
+### Location Information
+These stores are located in the Bay Area of ​​California, including San Jose, Santa Clara, Sunnyvale, Milpitas, Cupertino, Sonoma, Campbell, etc.
+![image](https://github.com/user-attachments/assets/5f4bfb34-5ba3-4185-967c-339bb6509ac4)
+![image](https://github.com/user-attachments/assets/3b3bf9ba-687a-471a-b5fc-13c9928bbd09)
+
