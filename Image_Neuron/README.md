@@ -1,6 +1,6 @@
 # LATENT DISPLAY TOPIC PREDICTIVE MODELS
 Table of Contents
-1. Overview
+1. Overview https://github.com/SherryYXH/SiriusMindShare_StoreFrontImage_Neurons/tree/main/Image_Neuron#overview
 2. Necessary Libraries
 3. Data Collection
 4. Basic EDA
