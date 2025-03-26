@@ -145,10 +145,7 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ![image](https://github.com/user-attachments/assets/72b8300f-38ce-4d0d-9e6a-df133a7b5f1f)
 
 ### Model Comparison
-#### Prior Prediction
-![image](https://github.com/user-attachments/assets/584f0093-87d0-4ae7-9f0f-3714ecc79a06)
-#### Post Prediction
-![image](https://github.com/user-attachments/assets/91030800-d9c1-4642-a480-7ec720b77d50)
+![image](https://github.com/user-attachments/assets/1d3d52d5-2f6b-4ed4-8873-5598c09813d0)
 
 
 
