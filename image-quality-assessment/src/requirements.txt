@@ -1,0 +1,4 @@
+nose
+sklearn
+tensorflow
+pillow==5.0.*
