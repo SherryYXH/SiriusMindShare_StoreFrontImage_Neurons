@@ -1,4 +1,4 @@
-# Store Front Image Attention & Aesthetics Analysis With Neuron Flatform
+# LATENT DISPLAY TOPIC PREDICTIVE MODELS
 Table of Contents
 1. Overview
 2. Necessary Libraries
