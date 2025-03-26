@@ -3,7 +3,7 @@ Table of Contents
 1. Overview
 2. Data Collection
 3. Basic EDA
-4. Prediction Model
+4. Label Prediction Model
 5. Model Performance
 
 ## Overview
@@ -56,7 +56,7 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ![image](https://github.com/user-attachments/assets/a74d47f8-0fd9-4866-ae65-9df6c45c7673)
 ![image](https://github.com/user-attachments/assets/0140e563-85a9-42e8-bd0d-2bd44d5a4596)
 
-### Manual Improved Store Front Image Keywords
+### Manual Hyperparameter Improved Store Front Image Keywords
 ![image](https://github.com/user-attachments/assets/01b431b9-fb62-4b12-baf7-b2b7c07b0373)
 ![image](https://github.com/user-attachments/assets/b447400f-ebb1-4121-afd9-9cbd5c125075)
 
@@ -64,7 +64,9 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ![image](https://github.com/user-attachments/assets/db0b047e-004f-442e-8ff0-174693567c5c)
 ![image](https://github.com/user-attachments/assets/0921a4a5-677b-4ad6-8608-70017728ec0d)
 
-
+## Label Prediction Model
+### Define Label Topics
+![image](https://github.com/user-attachments/assets/daf75d25-6c80-4896-8f1e-e76047aa9f19)
 
 
 
