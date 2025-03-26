@@ -44,12 +44,28 @@ The metadata contains additional image information (image name, store name) and 
 
 ## Basic EDA
 ### Distribution of Image Quality Class
-![image](https://github.com/user-attachments/assets/89615cec-8271-4206-9351-6a3dc65b0b57)
 ![image](https://github.com/user-attachments/assets/e25c0312-6455-4f74-a8ee-8a79d2863d21)
-
 
 ### Distribution of Image Score
 ![image](https://github.com/user-attachments/assets/71a5e5c5-ce64-4b3b-a57f-edcfba3fa2a0)
+
+### Prior Store Front Image Keywords
+![image](https://github.com/user-attachments/assets/a74d47f8-0fd9-4866-ae65-9df6c45c7673)
+![image](https://github.com/user-attachments/assets/0140e563-85a9-42e8-bd0d-2bd44d5a4596)
+
+### Manual Improved Store Front Image Keywords
+![image](https://github.com/user-attachments/assets/01b431b9-fb62-4b12-baf7-b2b7c07b0373)
+![image](https://github.com/user-attachments/assets/b447400f-ebb1-4121-afd9-9cbd5c125075)
+
+### Post Neuron Processed Store Front Image Keywords
+![image](https://github.com/user-attachments/assets/db0b047e-004f-442e-8ff0-174693567c5c)
+![image](https://github.com/user-attachments/assets/0921a4a5-677b-4ad6-8608-70017728ec0d)
+
+
+
+
+
+
 
 
 
