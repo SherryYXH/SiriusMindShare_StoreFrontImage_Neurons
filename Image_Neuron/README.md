@@ -34,6 +34,7 @@ By systematically comparing these models, this validation step ensures the relia
 ## Data Collection
 ### Data Source
 144 images were collected, covering three store types: restaurant, retail, and Salon.
+
 ### Location Information
 These stores are located in the Bay Area of ​​California, including San Jose, Santa Clara, Sunnyvale, Milpitas, Cupertino, Sonoma, Campbell, etc.
 ![image](https://github.com/user-attachments/assets/f8b9c2f5-13d7-4f9f-bf75-0b3bfd098525)
@@ -79,8 +80,13 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ## Label Prediction Model
 ### Define Label Topics
 ![image](https://github.com/user-attachments/assets/daf75d25-6c80-4896-8f1e-e76047aa9f19)
+
 ### Label Topics Results
 ![image](https://github.com/user-attachments/assets/695fa23b-892e-4487-9e7c-77161d62047d)
+
+### Fit Label Prediction Model
+![image](https://github.com/user-attachments/assets/47374c81-dd63-4daa-8554-1af8100d4a2c)
+
 
 
 
