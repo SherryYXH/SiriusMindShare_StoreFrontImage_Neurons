@@ -45,6 +45,8 @@ The metadata contains additional image information (image name, store name) and 
 ## Basic EDA
 ### Distribution of Image Quality Class
 ![image](https://github.com/user-attachments/assets/89615cec-8271-4206-9351-6a3dc65b0b57)
+![image](https://github.com/user-attachments/assets/e25c0312-6455-4f74-a8ee-8a79d2863d21)
+
 
 ### Distribution of Image Score
 ![image](https://github.com/user-attachments/assets/71a5e5c5-ce64-4b3b-a57f-edcfba3fa2a0)
