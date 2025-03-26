@@ -68,6 +68,13 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ### Suggestion Keywords Venn Diagram
 ![image](https://github.com/user-attachments/assets/6d338c29-855d-46ab-b5b8-0d14cd02ee2f)
 
+### Keywords Among Different Store Categories
+![image](https://github.com/user-attachments/assets/b5427df6-911f-4be3-8bc7-a55261a5c6f5)
+![image](https://github.com/user-attachments/assets/60d3886f-98f1-4c27-bd61-fdb068c9f283)
+
+### Keywords Among Different Image Quality Classes
+![image](https://github.com/user-attachments/assets/15679fb8-6670-4427-aa2d-8211c4ec40ee)
+![image](https://github.com/user-attachments/assets/3e46622c-63ae-4ee7-a9a8-a042b2f02af6)
 
 ## Label Prediction Model
 ### Define Label Topics
