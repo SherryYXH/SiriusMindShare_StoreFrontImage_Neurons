@@ -122,6 +122,57 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ## Label Prediction Model
 ### Define Label Topics
 ![image](https://github.com/user-attachments/assets/daf75d25-6c80-4896-8f1e-e76047aa9f19)
+```python
+#  Function to compute coherence score dynamically
+def compute_coherence_score(n_topics):
+    lda_model = LatentDirichletAllocation(n_components=n_topics, random_state=42)
+    lda_model.fit(X)
+
+    words = vectorizer.get_feature_names_out()
+    topics = [[words[j] for j in topic.argsort()[-10:]] for topic in lda_model.components_]
+
+    topic_word_ids = [[dictionary.token2id[word] for word in topic if word in dictionary.token2id] for topic in topics]
+
+    if any(len(topic) == 0 for topic in topic_word_ids):
+        return 0  # Prevent empty topics from affecting coherence
+
+    coherence_model = CoherenceModel(topics=topic_word_ids, texts=texts, dictionary=dictionary, coherence='c_v')
+    return coherence_model.get_coherence()
+
+#  Compute coherence scores for a range of topics
+topic_range = range(3, 12)  # Testing topics from 3 to 11
+coherence_scores = [compute_coherence_score(n) for n in topic_range]
+
+#  Get the top 3 best topic counts based on coherence scores
+top_3_indices = np.argsort(coherence_scores)[-3:][::-1]  # Get indices of top 3 scores
+top_3_topics = [topic_range[i] for i in top_3_indices]
+print(f" Best 3 topic counts based on coherence score: {top_3_topics}")
+
+#  Function to apply LDA and extract topics dynamically
+def apply_lda(n_components, X, vectorizer):
+    """Train LDA model and return topic assignments and extracted topics"""
+    lda = LatentDirichletAllocation(n_components=n_components, random_state=42)
+    lda.fit(X)
+
+    words = vectorizer.get_feature_names_out()
+    topics_dict = {}
+
+    # Extract Top Words for Each Topic
+    print(f"\n LDA with {n_components} topics:")
+    for i, topic in enumerate(lda.components_):
+        top_words = [words[j] for j in topic.argsort()[-10:]]  # Get top 10 words per topic
+        topics_dict[f"Topic {i+1}"] = top_words
+        print(f" Topic {i+1}: {', '.join(top_words)}")
+
+    # Assign topics to each row in the dataset
+    topic_assignments = lda.transform(X).argmax(axis=1)
+    return topic_assignments, topics_dict
+
+#  Apply LDA for the **top 3 best coherence scores**
+topics_summary = {}
+for n_topics in top_3_topics:
+    df[f'Topic_{n_topics}'], topics_summary[f'Topics_{n_topics}'] = apply_lda(n_topics, X, vectorizer)
+```
 
 ### Label Topics Results
 ![image](https://github.com/user-attachments/assets/695fa23b-892e-4487-9e7c-77161d62047d)
