@@ -140,7 +140,7 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 #### Post Topics Prediction Model Without All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/9acd551e-cd0f-4063-a071-f11520411859)
 #### Post Topics Prediction Model Without Clarity & Cognitive Demand
-![image](https://github.com/user-attachments/assets/6041986c-caca-446a-9486-0e32dd00367c)
+![image](https://github.com/user-attachments/assets/b13d0e83-3469-4d45-9e12-8f6c7e2d8424)
 #### Post Topics Prediction Model With All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/72b8300f-38ce-4d0d-9e6a-df133a7b5f1f)
 
