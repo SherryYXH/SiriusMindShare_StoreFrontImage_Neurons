@@ -177,6 +177,105 @@ for n_topics in top_3_topics:
 ### Fit Label Prediction Model
 ![image](https://github.com/user-attachments/assets/47374c81-dd63-4daa-8554-1af8100d4a2c)
 
+```python
+# Define The Label Prediction Model
+def train_evaluate_and_visualize(X, y, topic_name):
+    print(f"\n Processing {topic_name}...\n{'-' * 50}")
+
+    #  Train-test split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.3, random_state=42, stratify=y
+    )
+
+    #  Apply SMOTE for balancing classes
+    smote = SMOTE(random_state=42)
+    X_train, y_train = smote.fit_resample(X_train, y_train)
+
+    #  Models and Hyperparameters
+    models = {
+        "Logistic Regression": {
+            "model": LogisticRegression(max_iter=2000, random_state=42),
+            "params": {'C': [0.01, 0.1, 1, 10, 100], 'solver': ['lbfgs', 'liblinear']}
+        },
+        "Random Forest": {
+            "model": RandomForestClassifier(random_state=42),
+            "params": {
+                'n_estimators': [50, 100, 200], 'max_depth': [None, 10, 20, 30],
+                'min_samples_split': [2, 5, 10]
+            }
+        },
+        "XGBoost": {
+            "model": XGBClassifier(use_label_encoder=False, eval_metric='mlogloss', random_state=42),
+            "params": {
+                'n_estimators': [50, 100, 200], 'max_depth': [3, 6, 10],
+                'learning_rate': [0.01, 0.05, 0.1, 0.2]
+            }
+        }
+    }
+
+    #  Train and Tune Models
+    best_models = {}
+    for name, details in models.items():
+        print(f"\n🔍 Finding best parameters for {name}...")
+        grid_search = GridSearchCV(
+            details["model"], details["params"],
+            cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=42),
+            n_jobs=-1, verbose=1
+        )
+        grid_search.fit(X_train, y_train)
+        best_models[name] = grid_search.best_estimator_
+
+        print(f"Best parameters for {name}: {grid_search.best_params_}")
+
+    #  Evaluate Models
+    performance = {}
+    for name, model in best_models.items():
+        print(f"\n {name} Classification Report:")
+        y_pred = model.predict(X_test)
+        print(classification_report(y_test, y_pred))
+
+        # Store accuracy and AUC scores
+        performance[name] = {
+            'Accuracy': accuracy_score(y_test, y_pred),
+            'AUC': roc_auc_score(pd.get_dummies(y_test), model.predict_proba(X_test), multi_class='ovr', average='macro')
+        }
+
+    #  Save Performance Metrics
+    performance_df = pd.DataFrame(performance).T
+    print("\n Performance Metrics:")
+    print(performance_df)
+
+    #  Plot ROC Curves
+    plt.figure(figsize=(10, 8))
+    for name, model in best_models.items():
+        y_pred_prob = model.predict_proba(X_test)
+        fpr, tpr, _ = roc_curve(pd.get_dummies(y_test).values.ravel(), y_pred_prob.ravel())
+        roc_auc = auc(fpr, tpr)
+        plt.plot(fpr, tpr, label=f'{name} (AUC = {roc_auc:.2f})')
+
+    plt.plot([0, 1], [0, 1], 'k--', label='Random Guess')
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title(f'Multiclass ROC Curve for {topic_name}')
+    plt.legend()
+    plt.grid()
+    plt.show()
+
+    #  Confusion Matrices
+    for name, model in best_models.items():
+        y_pred_test = model.predict(X_test)
+        cm = confusion_matrix(y_test, y_pred_test)
+
+        plt.figure(figsize=(6, 5))
+        sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", cbar=False)
+        plt.title(f"{name} - Test Set Confusion Matrix")
+        plt.xlabel("Predicted")
+        plt.ylabel("True")
+        plt.show()
+
+    return performance_df
+```
+
 ## Model Performance
 ### Prior Topics Prediction Model
 ![image](https://github.com/user-attachments/assets/82da199a-6270-46e3-a091-3e66b27f356c)
