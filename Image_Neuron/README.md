@@ -144,9 +144,9 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 #### Post Topics Prediction Model With All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/72b8300f-38ce-4d0d-9e6a-df133a7b5f1f)
 
-### Model Comparison
+### Model Performance Comparison
 ![image](https://github.com/user-attachments/assets/1d3d52d5-2f6b-4ed4-8873-5598c09813d0)
-
+Based on the label predictions results above and the mutual information score analysis,  had already highlighted the predictive power of Neuron_Focus and Neuron_Engagement, suggesting their strong association with consumer attention. Neuron_Focus and Neuron_Engagement Features have demonstrated strong predictive value and should be prioritized in feature selection. Using neuron-processed image features is crucial for improving predictive accuracy and should be incorporated into future models. This label prediction study demonstrated that incorporating neuron-based features enhances the accuracy of front door image label prediction models. By using machine learning techniques and feature engineering, we identified key variables that contribute to effective classification. 
 
 
 
