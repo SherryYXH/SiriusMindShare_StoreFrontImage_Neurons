@@ -473,6 +473,7 @@ def train_evaluate_and_visualize(X, y, topic_name):
 | **Random Forest**       | 34.1%            | 50.0%          | 0.5072       | 0.7052     | +46.6%     | +39.0% |
 | **Logistic Regression** | 38.6%            | 38.6%          | 0.5303       | 0.5715     | 0%         | +7.8%  |
 
+---
 ### Key Findings:
 **XGBoost Dominance**  
    - Achieves highest absolute performance (78.3% AUC)  
@@ -480,6 +481,7 @@ def train_evaluate_and_visualize(X, y, topic_name):
 
 Based on the label predictions results above and the mutual information score analysis,  had already highlighted the predictive power of Neuron_Focus and Neuron_Engagement, suggesting their strong association with consumer attention. Neuron_Focus and Neuron_Engagement Features have demonstrated strong predictive value and should be prioritized in feature selection. Using neuron-processed image features is crucial for improving predictive accuracy and should be incorporated into future models. This label prediction study demonstrated that incorporating neuron-based features enhances the accuracy of front door image label prediction models. By using machine learning techniques and feature engineering, we identified key variables that contribute to effective classification.
 
+---
 ## Conclusions & Strategic Insights 
 
 ### *Core Methodology  
