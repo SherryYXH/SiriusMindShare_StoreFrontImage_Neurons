@@ -144,9 +144,26 @@ def plot_bar_subplot(ax, text, title, colormap):
 ![image](https://github.com/user-attachments/assets/db0b047e-004f-442e-8ff0-174693567c5c)
 ![image](https://github.com/user-attachments/assets/0921a4a5-677b-4ad6-8608-70017728ec0d)
 
+🔍 **Key Insights from Multi-Method Analysis**  
+
+Three analytical approaches (Initial, Manual Enhanced, Neuron) consistently identify **bold signage**, **clear branding**, and **service clarity** as foundational strengths for customer engagement. Enhanced methods reveal additional aesthetic drivers like "inviting signage" and "appealing branding," emphasizing the role of visual appeal in creating welcoming environments.  
+
+**Customer Attention Patterns**:  
+- Universal focus on **signage** and **logos** across all analyses  
+- Neuron/HyperParameter models uncover functional priorities: **entrance design** and **seating areas**  
+
+**Optimization Opportunities**:  
+- Universal: Improved **lighting** and **visibility**  
+- Neuron-specific: **Evening visibility** adjustments and **product presentation** enhancements  
+
+**Progressive Insights**:  
+Transitioning from basic to advanced analyses reveals refined priorities like **neon elements** for nighttime appeal and targeted lighting strategies. These findings validate that while strong signage remains critical, modern storefront success requires harmonizing core branding with context-aware design adaptations.  
+
+*Recommendation*: Prioritize lighting upgrades and signage boldness while tailoring functional areas (entrance/seating) to your business category.
+
 ### Suggestion Keywords Venn Diagram
-Then use **Venn diagrams** to illustrate the overlap and uniqueness of Strengths, Focus, and Suggestion keywords identified by the initial, enhanced, and Neuron keywords. The Neuron model consistently captures the largest number of unique keywords across all categories.
 ![image](https://github.com/user-attachments/assets/6d338c29-855d-46ab-b5b8-0d14cd02ee2f)
+Then use **Venn diagrams** to illustrate the overlap and uniqueness of Strengths, Focus, and Suggestion keywords identified by the initial, enhanced, and Neuron keywords. The Neuron model consistently captures the largest number of unique keywords across all categories.
 
 ### Keywords Among Different Store Categories
 ![image](https://github.com/user-attachments/assets/b5427df6-911f-4be3-8bc7-a55261a5c6f5)
