@@ -191,6 +191,30 @@ This analysis reveals a **dual strategy** for storefront success: maintain indus
 ### Keywords Among Different Image Quality Classes
 ![image](https://github.com/user-attachments/assets/15679fb8-6670-4427-aa2d-8211c4ec40ee)
 ![image](https://github.com/user-attachments/assets/3e46622c-63ae-4ee7-a9a8-a042b2f02af6)
+🔍 **Quality-Level Insights: From Poor to Excellence**  
+
+**Universal Foundations**:  
+- All stores, regardless of quality tier, succeed with **bold signage** and **clear branding**  
+- **Lighting upgrades** and **visibility improvements** remain critical for all  
+
+**Performance Gradients**:  
+- *Low-Performing Stores (Poor/Fair)*:  
+  - Strengths: Rely on generic elements ("minimalistic design")  
+  - Focus: Limited to basic signage visibility  
+  - Priorities: **Curb appeal** enhancements and **window simplification**  
+
+- *High-Performing Stores (Good/Excellent)*:  
+  - Strengths: Add "service clarity" and aesthetic "signage appeal"  
+  - Focus: Diversify attention to **entrance flow** and **seating experience**  
+  - Optimization: Refine **promotional displays** and **window organization**  
+
+**Progression Strategy**:  
+The analysis reveals an evolution path:  
+1. **Base Layer**: Master signage clarity and lighting fundamentals  
+2. **Mid-Tier**: Improve functional areas (entrances/windows)  
+3. **Excellence**: Perfect experiential elements (seating zones, promotional synergy)  
+
+*Key Takeaway*: Storefront excellence requires maintaining core visual standards while strategically layering sophistication – from visibility basics to experience design – as performance improves.
 
 ## Label Prediction Model
 ### Define Label Topics
