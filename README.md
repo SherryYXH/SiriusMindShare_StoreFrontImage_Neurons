@@ -322,12 +322,15 @@ for n_topics in top_3_topics:
     df[f'Topic_{n_topics}'], topics_summary[f'Topics_{n_topics}'] = apply_lda(n_topics, X, vectorizer)
 ```
 
+---
 ### Label Topics Results
 ![image](https://github.com/user-attachments/assets/695fa23b-892e-4487-9e7c-77161d62047d)
 
+---
 ### Fit Label Prediction Model
 ![image](https://github.com/user-attachments/assets/47374c81-dd63-4daa-8554-1af8100d4a2c)
 
+---
 ```python
 # Define The Label Prediction Model
 def train_evaluate_and_visualize(X, y, topic_name):
