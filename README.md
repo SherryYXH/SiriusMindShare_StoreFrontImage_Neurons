@@ -125,7 +125,6 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ![image](https://github.com/user-attachments/assets/e25c0312-6455-4f74-a8ee-8a79d2863d21)
 **Distribution of Image Score**
 ![image](https://github.com/user-attachments/assets/71a5e5c5-ce64-4b3b-a57f-edcfba3fa2a0)
-🔍 **Image Quality & Aesthetic Benchmarking**  
 
 **Quality Distribution**:  
 - **High-Performance Majority**: 65% of images fall into "Good" (50) or "Excellent" (50) categories  
