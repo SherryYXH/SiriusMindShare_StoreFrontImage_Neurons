@@ -205,6 +205,7 @@ Transitioning from basic to advanced analyses reveals refined priorities like **
 
 *Recommendation*: Prioritize lighting upgrades and signage boldness while tailoring functional areas (entrance/seating) to your business category.
 
+---
 ### Suggestion Keywords Venn Diagram
 ![image](https://github.com/user-attachments/assets/6d338c29-855d-46ab-b5b8-0d14cd02ee2f)
 Then use **Venn diagrams** to illustrate the overlap and uniqueness of Strengths, Focus, and Suggestion keywords identified by the initial, enhanced, and Neuron keywords. The Neuron model consistently captures the largest number of unique keywords across all categories.
