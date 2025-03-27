@@ -429,11 +429,12 @@ def train_evaluate_and_visualize(X, y, topic_name):
 
     return performance_df
 ```
-
+---
 ## Model Performance
 ### Prior Topics Prediction Model
 ![image](https://github.com/user-attachments/assets/82da199a-6270-46e3-a091-3e66b27f356c)
 
+---
 ### Post Topics Prediction Model
 #### Mutual Information Scores Of Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/6127cabc-e239-4689-b618-9b0591ed9656)
@@ -448,13 +449,19 @@ def train_evaluate_and_visualize(X, y, topic_name):
 - **Topic_5** displays stronger feature discrimination (wider score range: **0.000–0.20**).
 - **Topics 3–4** show flatter distributions, suggesting weaker alignment between features and target labels.
 
+---
 #### Post Topics Prediction Model Without All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/9acd551e-cd0f-4063-a071-f11520411859)
+
+---
 #### Post Topics Prediction Model Without Clarity & Cognitive Demand
 ![image](https://github.com/user-attachments/assets/b13d0e83-3469-4d45-9e12-8f6c7e2d8424)
+
+---
 #### Post Topics Prediction Model With All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/72b8300f-38ce-4d0d-9e6a-df133a7b5f1f)
 
+---
 ### Model Performance Comparison
 ![image](https://github.com/user-attachments/assets/1d3d52d5-2f6b-4ed4-8873-5598c09813d0)
 
