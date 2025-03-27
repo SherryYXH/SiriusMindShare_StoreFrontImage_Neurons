@@ -111,53 +111,6 @@ The metadata contains additional image information (image name, store name) and 
 |                         | Rescaled_Paq2piq Class     |                            |                              | Neuron_Cognitive Demand      |
 |                         |                            |                            |                              | Neuron_Clarity               |
 |                         |                            |                            |                              | Neuron_Engagement            |
-
----
-
-### **Column Design Logic**:
-1. **Core Metadata** (5)  
-   - 基础标识字段：图片/店铺核心信息  
-
-2. **Image Quality** (8)  
-   - 图像质量评估体系：原始值 + 标准化值  
-
-3. **Keyword Analysis** (6)  
-   - 人工标注语义标签：描述 + 关键词集  
-
-4. **HyperParameter Tuning** (6)  
-   - 超参数优化结果：增强版分析输出  
-
-5. **Neuron Analysis** (10)  
-   - 注意力网络指标：热图观察 + 认知维度  
-
-### 布局优化：
-- **字段均衡**：每列5-10个字段（原Advanced Metrics拆解后分别为6/10）
-- **技术分层**：
-  - 左→右：基础信息 →
-
-### **Column Design Logic**:
-1. **Core Metadata**  
-   - 基础标识字段（5项）  
-   - 店铺核心信息存储  
-
-2. **Image Quality**  
-   - 图像质量评分（8项）  
-   - 包含原始值和标准化值  
-
-3. **Keyword Analysis**  
-   - 人工标注关键词（6项）  
-   - 含原始描述和分词结果  
-
-4. **Advanced Metrics**  
-   - 超参数优化结果（6项）  
-   - 神经元网络分析指标（10项）  
-   - 高阶分析输出集合  
-
-### 布局优势：
-- **视觉平衡**：每列5-8个字段，避免纵向过长  
-- **逻辑分层**：从左到右呈现「基础→质量→语义→复杂分析」递进关系  
-- **快速定位**：通过列标题直接跳转目标字段类型  
-
 ---
 ### Neuron AI Processed Image
 ![IMG_7515](https://github.com/user-attachments/assets/c5b47e22-9a7b-48a9-892d-e7ba4444f79f)
