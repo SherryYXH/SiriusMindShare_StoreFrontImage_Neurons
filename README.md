@@ -6,6 +6,7 @@
 4. Basic EDA
 5. Label Prediction Model
 6. Model Performance
+7. Conclusions & Strategic Insights 
 
 ## 📌 Overview
 This phase focuses on **validating AI models** that predict storefront improvement suggestions using **neuron-processed image insights** and textual features. Designed to empower small businesses with data-driven design optimizations.
@@ -427,16 +428,7 @@ def train_evaluate_and_visualize(X, y, topic_name):
 #### Mutual Information Scores Of Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/6127cabc-e239-4689-b618-9b0591ed9656)
 
-**Feature Contribution Ranking**
 
-| Feature                     | Contribution Score |
-|-----------------------------|--------------------|
-| **Neuron_Engagement**       | 0.42               |
-| **Neuron_Focus**            | 0.38               |
-| **Neuron_Clarity**          | 0.12               |
-| **Neuron_Cognitive Demand** | 0.07               |
-
-*Normalized mutual information scores (0-0.5 scale)*
 
 #### Post Topics Prediction Model Without All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/9acd551e-cd0f-4063-a071-f11520411859)
@@ -461,7 +453,22 @@ def train_evaluate_and_visualize(X, y, topic_name):
    - Achieves highest absolute performance (78.3% AUC)  
    - Shows strongest improvement from neuron features (+40% AUC)
 
-Based on the label predictions results above and the mutual information score analysis,  had already highlighted the predictive power of Neuron_Focus and Neuron_Engagement, suggesting their strong association with consumer attention. Neuron_Focus and Neuron_Engagement Features have demonstrated strong predictive value and should be prioritized in feature selection. Using neuron-processed image features is crucial for improving predictive accuracy and should be incorporated into future models. This label prediction study demonstrated that incorporating neuron-based features enhances the accuracy of front door image label prediction models. By using machine learning techniques and feature engineering, we identified key variables that contribute to effective classification. 
+Based on the label predictions results above and the mutual information score analysis,  had already highlighted the predictive power of Neuron_Focus and Neuron_Engagement, suggesting their strong association with consumer attention. Neuron_Focus and Neuron_Engagement Features have demonstrated strong predictive value and should be prioritized in feature selection. Using neuron-processed image features is crucial for improving predictive accuracy and should be incorporated into future models. This label prediction study demonstrated that incorporating neuron-based features enhances the accuracy of front door image label prediction models. By using machine learning techniques and feature engineering, we identified key variables that contribute to effective classification.
+
+## Conclusions & Strategic Insights 
+
+### *Core Methodology  
+- **Hybrid AI Approach**: Combines aesthetic evaluation (PaQ-2-PiQ/NIMA) with neuromarketing attention mapping  
+- **SME Accessibility**: Neurons AI reduces traditional eye-tracking costs while maintaining high prediction fidelity  
+
+### Critical Findings
+1. **Neuron Feature Impact**:  
+   - `Neuron_Focus` + `Engagement` drive 78% of model accuracy gains  
+   - 40% AUC improvement vs. baseline models  
+2. **Model Performance**:  
+   ```python
+   # Best performers (AUC)
+   {"XGBoost": 0.783, "Random Forest": 0.705, "Logistic Regression": 0.571}
 
 
 
