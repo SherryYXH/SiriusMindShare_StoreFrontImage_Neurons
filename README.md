@@ -130,6 +130,7 @@ def plot_bar_subplot(ax, text, title, colormap):
     ax.set_title(title, fontsize=14)
 ```
 **Initial & Enhanced Keyword Visualization**: Identifies strengths/focus areas using traditional methods.
+
 **Initial Keywords**
 ![image](https://github.com/user-attachments/assets/a74d47f8-0fd9-4866-ae65-9df6c45c7673)
 ![image](https://github.com/user-attachments/assets/0140e563-85a9-42e8-bd0d-2bd44d5a4596)
@@ -144,6 +145,7 @@ def plot_bar_subplot(ax, text, title, colormap):
 ![image](https://github.com/user-attachments/assets/0921a4a5-677b-4ad6-8608-70017728ec0d)
 
 ### Suggestion Keywords Venn Diagram
+Then use **Venn diagrams** to illustrate the overlap and uniqueness of Strengths, Focus, and Suggestion keywords identified by the initial, enhanced, and Neuron keywords. The Neuron model consistently captures the largest number of unique keywords across all categories.
 ![image](https://github.com/user-attachments/assets/6d338c29-855d-46ab-b5b8-0d14cd02ee2f)
 
 ### Keywords Among Different Store Categories
