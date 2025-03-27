@@ -11,14 +11,14 @@
 ## 📌 Overview
 This phase focuses on **validating AI models** that predict storefront improvement suggestions using **neuron-processed image insights** and textual features. Designed to empower small businesses with data-driven design optimizations.
 
-## 🧰 Key Features
+### 🧰 Key Features
 - **Cross-Category Analysis**: Retail/Restaurant/Salon comparisons  
 - **Image Quality Tier Evaluation**: Poor → Excellent performance grading  
 - **Neuron-Enhanced Predictions**: Attention heatmap-driven features  
 - **Model Benchmarking**: XGBoost vs. Random Forest vs. Logistic Regression  
-
-## 🔧 Methodology
-### Model Implementation
+---
+### 🔧 Methodology
+#### Model Implementation
 | Model | Strength | Use Case |
 |-------|----------|----------|
 | **XGBoost** | High accuracy | Final deployment |
@@ -33,16 +33,16 @@ This phase focuses on **validating AI models** that predict storefront improveme
 
 ✅ Rapid deployment
 
-### ⚙️ Optimization
+#### ⚙️ Optimization
 - **Grid Search** with 5-fold cross-validation  
 - **Hyperparameter Tuning**: max_depth (XGBoost), n_estimators (Random Forest)  
 - **Class Weight Balancing** for imputed suggestion categories
 
-### 🏆 Performance Evaluation:
+#### 🏆 Performance Evaluation:
 - **ROC-AUC Analysis**: Measuring model discrimination ability for multi-class classification.
 - **Confusion Matrix & Classification Report**: Identifying misclassification patterns and precision-recall trade-offs.
 - **Feature Analysis**: Interpreting key contributors to model decisions.
-
+---
 ### Expected Outcomes
 - Validation of model effectiveness in predicting neuron improvement suggestions.
 - Validation of model effectiveness in predicting neuron improvement suggestions.Identification of the best-performing model based on evaluation metrics.
@@ -90,7 +90,7 @@ from sklearn.feature_selection import mutual_info_classif
 from sklearn.impute import SimpleImputert
 from imblearn.over_sampling import SMOTE 
 ```
-
+---
 ## Data Collection
 ### Data Source
 144 images were collected, covering three store types: restaurant, retail, and Salon.
