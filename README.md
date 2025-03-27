@@ -145,6 +145,7 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 
 **Design Implications**:  
 Salons demonstrate how **targeted local enhancements** (e.g., decor density, focal point contrast) can elevate both technical quality and perceived attractiveness—a transferable strategy for other retail categories.
+
 ---
 ### Image Keywords Visualization
 **Code**
