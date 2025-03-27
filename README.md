@@ -33,9 +33,9 @@ Performance Evaluation:
 - Feature Analysis: Interpreting key contributors to model decisions.
 
 ### Expected Outcomes
-1. Validation of model effectiveness in predicting neuron improvement suggestions.
-2. Identification of the best-performing model based on evaluation metrics.
-3. Insights into how image aesthetics and attention-based factors influence prediction accuracy.
+- Validation of model effectiveness in predicting neuron improvement suggestions.
+- Validation of model effectiveness in predicting neuron improvement suggestions.Identification of the best-performing model based on evaluation metrics.
+- Validation of model effectiveness in predicting neuron improvement suggestions.Insights into how image aesthetics and attention-based factors influence prediction accuracy.
 
 By systematically comparing these models, this validation step ensures the reliability of AI-driven recommendations, supporting small businesses in optimizing their storefront designs through data-driven insights.
 
@@ -103,16 +103,43 @@ Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 ### Distribution of Image Score
 ![image](https://github.com/user-attachments/assets/71a5e5c5-ce64-4b3b-a57f-edcfba3fa2a0)
 
-### **Initial & Enhanced Keyword Visualization**: Identifies strengths/focus areas using traditional methods.
-#### Initial Keywords
+### Image Keywords Visualization
+**Code**
+```Python
+# Generate Word Cloud
+def generate_wordcloud_subplot(ax, text, title, colormap):
+    wordcloud = WordCloud(width=800, height=400, background_color='white', colormap=colormap).generate(text)
+    ax.imshow(wordcloud, interpolation='bilinear')
+    ax.axis('off')
+    ax.set_title(title, fontsize=14)
+
+# Generate Bar Chart
+def plot_bar_subplot(ax, text, title, colormap):
+    words = text.split()
+    word_counts = Counter(words)
+    most_common_words = word_counts.most_common(20)
+    keywords, counts = zip(*most_common_words)
+    
+    cmap = plt.get_cmap(colormap)
+    norm = plt.Normalize(vmin=min(counts), vmax=max(counts))
+    colors = [cmap(norm(value)) for value in counts]
+    
+    ax.barh(keywords, counts, color=colors)
+    ax.invert_yaxis()
+    ax.set_xlabel('Frequency')
+    ax.set_title(title, fontsize=14)
+```
+**Initial & Enhanced Keyword Visualization**: Identifies strengths/focus areas using traditional methods.
+**Initial Keywords**
 ![image](https://github.com/user-attachments/assets/a74d47f8-0fd9-4866-ae65-9df6c45c7673)
 ![image](https://github.com/user-attachments/assets/0140e563-85a9-42e8-bd0d-2bd44d5a4596)
 
-#### Manual Enhanced Keywords
+**Manual Enhanced Keywords**
 ![image](https://github.com/user-attachments/assets/01b431b9-fb62-4b12-baf7-b2b7c07b0373)
 ![image](https://github.com/user-attachments/assets/b447400f-ebb1-4121-afd9-9cbd5c125075)
 
-### **Neuron-Processed Image Analysis**: Leverages AI attention mapping for deep visual insights.
+**Neuron-Processed Image Keyword Visualization**: Leverages AI attention mapping for deep visual insights.
+**Neuron Processed Keywords**
 ![image](https://github.com/user-attachments/assets/db0b047e-004f-442e-8ff0-174693567c5c)
 ![image](https://github.com/user-attachments/assets/0921a4a5-677b-4ad6-8608-70017728ec0d)
 
