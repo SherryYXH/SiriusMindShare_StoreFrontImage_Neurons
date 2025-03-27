@@ -9,6 +9,13 @@ Table of Contents
 
 ## Overview
 This phase of the research focuses on validating the label prediction models used to classify storefront neuron improvement suggestions. By evaluating multiple classification models, the goal is to determine the most effective approach for predicting enhancement recommendations based on image and text features.
+
+### Key features
+- Comparative analysis across 3 store categories (Retail, Restaurant, Salon)
+- Image quality-based perception evaluation
+- Latent topic modeling for design recommendations
+- Performance benchmarking of ML models
+
 ### Methodology
 Model Training & Prediction:
 Implementing three classification models:
