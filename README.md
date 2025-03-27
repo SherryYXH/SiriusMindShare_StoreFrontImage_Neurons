@@ -439,7 +439,7 @@ def train_evaluate_and_visualize(X, y, topic_name):
 
 **Initial vs Neuron Processed Predictions**
 
-| Model               | Initial Accuracy | Neuron Processed Accuracy | Initial AUC | Neuron Processed AUC | Δ Accuracy | Δ AUC  |
+| Model               | Initial Accuracy | Neuron Accuracy | Initial AUC | Neuron AUC | Δ Accuracy | Δ AUC  |
 |---------------------|-------------------|-----------------|--------------|------------|------------|--------|
 | **XGBoost**         | 38.6%            | 54.5%          | 0.5595       | 0.7832     | +41.2%     | +40.0% |
 | **Random Forest**       | 34.1%            | 50.0%          | 0.5072       | 0.7052     | +46.6%     | +39.0% |
