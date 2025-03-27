@@ -19,18 +19,18 @@ This phase of the research focuses on validating the label prediction models use
 ### Methodology
 Model Training & Prediction:
 Implementing three classification models:
-1. Logistic Regression
-2. Random Forest
-3. XGBoost
+- Logistic Regression
+- Random Forest
+- XGBoost
 Training models on extracted image features and text features.
 
 Model Optimization：
 Identify the best hyperparameters for different classification models using Grid Search with Cross-Validation. 
 
 Performance Evaluation:
-1. ROC-AUC Analysis: Measuring model discrimination ability for multi-class classification.
-2. Confusion Matrix & Classification Report: Identifying misclassification patterns and precision-recall trade-offs.
-3. Feature Analysis: Interpreting key contributors to model decisions.
+- ROC-AUC Analysis: Measuring model discrimination ability for multi-class classification.
+- Confusion Matrix & Classification Report: Identifying misclassification patterns and precision-recall trade-offs.
+- Feature Analysis: Interpreting key contributors to model decisions.
 
 ### Expected Outcomes
 1. Validation of model effectiveness in predicting neuron improvement suggestions.
