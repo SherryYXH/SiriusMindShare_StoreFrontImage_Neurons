@@ -1,14 +1,14 @@
 # LATENT DISPLAY TOPIC PREDICTIVE MODELS
 ## 🔍 Table of Contents
-1. Overview
-2. Necessary Libraries
-3. Data Collection
-4. Basic EDA
-5. Label Prediction Model
-6. Model Performance
-7. Conclusions & Strategic Insights 
+1. [Overview](#overview)
+2. [Necessary Libraries](#necessary-libraries)
+3. [Data Collection](#data-collection)
+4. [Basic EDA](#basic-eda)
+5. [Label Prediction Model](#label-prediction-model)
+6. [Model Performance](#model-performance)
+7. [Conclusions & Strategic Insights](#conclusions-strategic-insights)
 
-## 📌 Overview
+## <a name="overview"></a> 📌 Overview
 This phase focuses on **validating AI models** that predict storefront improvement suggestions using **neuron-processed image insights** and textual features. Designed to empower small businesses with data-driven design optimizations.
 
 ### 🧰 Key Features
@@ -50,7 +50,7 @@ This phase focuses on **validating AI models** that predict storefront improveme
 
 By systematically comparing these models, this validation step ensures the reliability of AI-driven recommendations, supporting small businesses in optimizing their storefront designs through data-driven insights.
 
-## Necessary Libraries
+## <a name="necessary-libraries"></a>  Necessary Libraries
 ### Front Door Image Info_EDA.ipynb
 ```python
 import pandas as pd
@@ -91,7 +91,7 @@ from sklearn.impute import SimpleImputert
 from imblearn.over_sampling import SMOTE 
 ```
 
-## Data Collection
+## <a name="data-collection"></a> Data Collection
 ### Data Source
 144 images were collected, covering three store types: restaurant, retail, and Salon.
 
@@ -120,7 +120,7 @@ The metadata contains additional image information (image name, store name) and 
 ![IMG_7515](https://github.com/user-attachments/assets/c5b47e22-9a7b-48a9-892d-e7ba4444f79f)
 Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 
-## Basic EDA
+## <a name="basic-eda"></a> Basic EDA
 ### Image Quality Visualization
 
 **Distribution of Image Quality Class**
@@ -265,7 +265,7 @@ The analysis reveals an evolution path:
 
 ---
 
-## Label Prediction Model
+## <a name="label-prediction-model"></a> Label Prediction Model
 ### Define Label Topics
 ![image](https://github.com/user-attachments/assets/daf75d25-6c80-4896-8f1e-e76047aa9f19)
 ```python
@@ -430,7 +430,7 @@ def train_evaluate_and_visualize(X, y, topic_name):
     return performance_df
 ```
 ---
-## Model Performance
+## <a name="model-performance"></a> Model Performance
 ### Prior Topics Prediction Model
 ![image](https://github.com/user-attachments/assets/82da199a-6270-46e3-a091-3e66b27f356c)
 
@@ -482,7 +482,7 @@ def train_evaluate_and_visualize(X, y, topic_name):
 Based on the label predictions results above and the mutual information score analysis,  had already highlighted the predictive power of Neuron_Focus and Neuron_Engagement, suggesting their strong association with consumer attention. Neuron_Focus and Neuron_Engagement Features have demonstrated strong predictive value and should be prioritized in feature selection. Using neuron-processed image features is crucial for improving predictive accuracy and should be incorporated into future models. This label prediction study demonstrated that incorporating neuron-based features enhances the accuracy of front door image label prediction models. By using machine learning techniques and feature engineering, we identified key variables that contribute to effective classification.
 
 ---
-## Conclusions & Strategic Insights 
+## <a name="conclusions-strategic-insights"></a> Conclusions & Strategic Insights 
 
 ### *Core Methodology  
 - **Hybrid AI Approach**: Combines aesthetic evaluation (PaQ-2-PiQ/NIMA) with neuromarketing attention mapping  
