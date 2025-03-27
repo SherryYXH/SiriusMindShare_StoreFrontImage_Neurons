@@ -168,6 +168,25 @@ Then use **Venn diagrams** to illustrate the overlap and uniqueness of Strengths
 ### Keywords Among Different Store Categories
 ![image](https://github.com/user-attachments/assets/b5427df6-911f-4be3-8bc7-a55261a5c6f5)
 ![image](https://github.com/user-attachments/assets/60d3886f-98f1-4c27-bd61-fdb068c9f283)
+🔍 **Cross-Category Insights & Optimization Strategies**  
+
+**Universal Success Factors**:  
+- **Bold signage** and **clear branding** emerge as foundational strengths across *all* store types (Retail, Restaurant, Salon)  
+- Customer attention consistently prioritizes **signage visibility** and **brand recognition**  
+
+**Category-Specific Differentiators**:  
+- *Restaurants*: Benefit from **outdoor seating** and **entrance zone optimization**  
+- *Salons*: Gain advantage through **bilingual signage** and **streamlined window displays**  
+- *Retail*: Require emphasis on **exterior lighting strategies**  
+
+**Actionable Improvements**:  
+- **All Categories**: Implement lighting upgrades and visibility enhancements  
+- **Targeted Adjustments**:  
+  - Simplify complex window displays (Salons)  
+  - Enhance pathway lighting (Retail)  
+  - Optimize entrance flow (Restaurants)  
+
+This analysis reveals a **dual strategy** for storefront success: maintain industry-standard visual clarity while implementing *category-tailored* design elements that address unique customer expectations and operational contexts.
 
 ### Keywords Among Different Image Quality Classes
 ![image](https://github.com/user-attachments/assets/15679fb8-6670-4427-aa2d-8211c4ec40ee)
