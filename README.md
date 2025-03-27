@@ -463,7 +463,7 @@ Based on the label predictions results above and the mutual information score an
 
 ### Critical Findings
 1. **Neuron Feature Impact**:  
-   - `Neuron_Focus` + `Engagement` drive 78% of model accuracy gains  
+   - `Neuron_Focus` + `Neuron_Engagement` drive 78% of model accuracy gains  
    - 40% AUC improvement vs. baseline models  
 2. **Model Performance**:  
    ```python
