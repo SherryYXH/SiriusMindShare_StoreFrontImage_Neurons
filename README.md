@@ -330,7 +330,6 @@ for n_topics in top_3_topics:
 ### Fit Label Prediction Model
 ![image](https://github.com/user-attachments/assets/47374c81-dd63-4daa-8554-1af8100d4a2c)
 
----
 ```python
 # Define The Label Prediction Model
 def train_evaluate_and_visualize(X, y, topic_name):
