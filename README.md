@@ -97,26 +97,43 @@ The metadata contains additional image information (image name, store name) and 
 
 # Dataset Variables Structure
 
-| **Core Metadata**       | **Image Quality**          | **Keyword Analysis**       | **Advanced Metrics**         |
-|-------------------------|----------------------------|----------------------------|------------------------------|
-| Image_Name              | NIMA Model Score           | Strengths                  | HyperParameter_Strengths     |
-| Folder_Name             | Rescaled_NIMA Score        | Strengths_Keywords         | HyperParameter_Strengths_Keywords |
-| Store_Name              | Paq2piq Avg Local Score    | Human Eye Focus            | HyperParameter_Human Eye Focus |
-| Store_Category          | Rescaled_Paq2piq Local     | Human Eye Focus_Keywords   | HyperParameter_Human Eye Focus_Keywords |
-| Store_Location          | Paq2piq Global Score       | Suggestion                 | HyperParameter_Suggestion    |
-|                         | Rescaled_Paq2piq Global    | Suggestion_Keywords        | HyperParameter_Suggestion_Keywords |
-|                         | Paq2piq Class              |                            | Neuron_Strengths             |
-|                         | Rescaled_Paq2piq Class     |                            | Neuron_Strengths_Keywords    |
-|                         |                            |                            | Neuron_Heatmap_Observations  |
-|                         |                            |                            | Neuron_Heatmap_Observations_Keywords |
-|                         |                            |                            | Neuron_Suggestion            |
-|                         |                            |                            | Neuron_Suggestion_Keywords   |
-|                         |                            |                            | Neuron_Focus                 |
-|                         |                            |                            | Neuron_Cognitive Demand      |
-|                         |                            |                            | Neuron_Clarity               |
-|                         |                            |                            | Neuron_Engagement            |
+# Dataset Variables Structure
+
+| **Core Metadata**       | **Image Quality**          | **Initial Keywords**       | **Manual Enhanced Keywords**    | **Neuron Processed Keywords**          |
+|-------------------------|----------------------------|----------------------------|------------------------------|------------------------------|
+| Image_Name              | NIMA Model Score           | Strengths                  | HyperParameter_Strengths     | Neuron_Strengths             |
+| Folder_Name             | Rescaled_NIMA Score        | Strengths_Keywords         | HyperParameter_Strengths_Keywords | Neuron_Strengths_Keywords    |
+| Store_Name              | Paq2piq Avg Local Score    | Human Eye Focus            | HyperParameter_Human Eye Focus | Neuron_Heatmap_Observations  |
+| Store_Category          | Rescaled_Paq2piq Local     | Human Eye Focus_Keywords   | HyperParameter_Human Eye Focus_Keywords | Neuron_Heatmap_Observations_Keywords |
+| Store_Location          | Paq2piq Global Score       | Suggestion                 | HyperParameter_Suggestion    | Neuron_Suggestion            |
+|                         | Rescaled_Paq2piq Global    | Suggestion_Keywords        | HyperParameter_Suggestion_Keywords | Neuron_Suggestion_Keywords   |
+|                         | Paq2piq Class              |                            |                              | Neuron_Focus                 |
+|                         | Rescaled_Paq2piq Class     |                            |                              | Neuron_Cognitive Demand      |
+|                         |                            |                            |                              | Neuron_Clarity               |
+|                         |                            |                            |                              | Neuron_Engagement            |
 
 ---
+
+### **Column Design Logic**:
+1. **Core Metadata** (5)  
+   - 基础标识字段：图片/店铺核心信息  
+
+2. **Image Quality** (8)  
+   - 图像质量评估体系：原始值 + 标准化值  
+
+3. **Keyword Analysis** (6)  
+   - 人工标注语义标签：描述 + 关键词集  
+
+4. **HyperParameter Tuning** (6)  
+   - 超参数优化结果：增强版分析输出  
+
+5. **Neuron Analysis** (10)  
+   - 注意力网络指标：热图观察 + 认知维度  
+
+### 布局优化：
+- **字段均衡**：每列5-10个字段（原Advanced Metrics拆解后分别为6/10）
+- **技术分层**：
+  - 左→右：基础信息 →
 
 ### **Column Design Logic**:
 1. **Core Metadata**  
