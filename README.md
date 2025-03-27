@@ -90,7 +90,7 @@ from sklearn.feature_selection import mutual_info_classif
 from sklearn.impute import SimpleImputert
 from imblearn.over_sampling import SMOTE 
 ```
----
+
 ## Data Collection
 ### Data Source
 144 images were collected, covering three store types: restaurant, retail, and Salon.
@@ -98,6 +98,7 @@ from imblearn.over_sampling import SMOTE
 ### Location Information
 These stores are located in the Bay Area of ​​California, including San Jose, Santa Clara, Sunnyvale, Milpitas, Cupertino, Sonoma, Campbell, etc.
 ![image](https://github.com/user-attachments/assets/f8b9c2f5-13d7-4f9f-bf75-0b3bfd098525)
+---
 
 ### Metadata
 The metadata contains additional image information (image name, store name) and store attributes (such as store name, category, geographical location, etc.), image quality scores (such as NIMA Score, Paq2piq Scores), and related image keywords (Strength, Human Eyes Focus, Suggestions) for subsequent analysis. 
