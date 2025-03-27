@@ -42,7 +42,7 @@ This phase focuses on **validating AI models** that predict storefront improveme
 - **ROC-AUC Analysis**: Measuring model discrimination ability for multi-class classification.
 - **Confusion Matrix & Classification Report**: Identifying misclassification patterns and precision-recall trade-offs.
 - **Feature Analysis**: Interpreting key contributors to model decisions.
----
+
 ### Expected Outcomes
 - Validation of model effectiveness in predicting neuron improvement suggestions.
 - Validation of model effectiveness in predicting neuron improvement suggestions.Identification of the best-performing model based on evaluation metrics.
