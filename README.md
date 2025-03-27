@@ -25,6 +25,7 @@ This phase focuses on **validating AI models** that predict storefront improveme
 | **Logistic Regression** | Baseline performance | Quick prototyping |
 
 **Practical ML Choices: Prioritized XGBoost/RF/Logistic Regression over deep learning for:**
+
 ✅ SME-friendly compute costs
 
 ✅ Model interpretability
