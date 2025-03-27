@@ -428,7 +428,15 @@ def train_evaluate_and_visualize(X, y, topic_name):
 #### Mutual Information Scores Of Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/6127cabc-e239-4689-b618-9b0591ed9656)
 
-
+**Dominant Predictors**
+- **Neuron_Engagement** and **Neuron_Focus** consistently show higher relevance across all topics.
+- **Example**: Topic_5 scores peak at **0.175–0.20** for these features.
+**Low-Impact Variables**
+- **Neuron_Clarity** and **Cognitive Demand** exhibit minimal predictive power (≤0.15).
+- In Topics 3–4, their contributions are negligible (**<0.10**).
+**Topic-Specific Patterns**
+- **Topic_5** displays stronger feature discrimination (wider score range: **0.000–0.20**).
+- **Topics 3–4** show flatter distributions, suggesting weaker alignment between features and target labels.
 
 #### Post Topics Prediction Model Without All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/9acd551e-cd0f-4063-a071-f11520411859)
