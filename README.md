@@ -24,6 +24,11 @@ This phase focuses on **validating AI models** that predict storefront improveme
 | **Random Forest** | Feature interpretability | Diagnostic analysis | 
 | **Logistic Regression** | Baseline performance | Quick prototyping |
 
+**Practical ML Choices: Prioritized XGBoost/RF/Logistic Regression over deep learning for:**
+✅ SME-friendly compute costs
+✅ Model interpretability
+✅ Rapid deployment
+
 ### ⚙️ Optimization
 - **Grid Search** with 5-fold cross-validation  
 - **Hyperparameter Tuning**: max_depth (XGBoost), n_estimators (Random Forest)  
