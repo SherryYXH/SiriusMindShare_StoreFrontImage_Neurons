@@ -95,22 +95,16 @@ The metadata contains additional image information (image name, store name) and 
 
 **Dataset Variables Overview**
 
-# Dataset Variables Structure
-
-# Dataset Variables Structure
-
-| **Core Metadata**       | **Image Quality**          | **Initial Keywords**       | **Manual Enhanced Keywords**    | **Neuron Processed Keywords**          |
-|-------------------------|----------------------------|----------------------------|------------------------------|------------------------------|
-| Image_Name              | NIMA Model Score           | Strengths                  | HyperParameter_Strengths     | Neuron_Strengths             |
-| Folder_Name             | Rescaled_NIMA Score        | Strengths_Keywords         | HyperParameter_Strengths_Keywords | Neuron_Strengths_Keywords    |
-| Store_Name              | Paq2piq Avg Local Score    | Human Eye Focus            | HyperParameter_Human Eye Focus | Neuron_Heatmap_Observations  |
-| Store_Category          | Rescaled_Paq2piq Local     | Human Eye Focus_Keywords   | HyperParameter_Human Eye Focus_Keywords | Neuron_Heatmap_Observations_Keywords |
-| Store_Location          | Paq2piq Global Score       | Suggestion                 | HyperParameter_Suggestion    | Neuron_Suggestion            |
-|                         | Rescaled_Paq2piq Global    | Suggestion_Keywords        | HyperParameter_Suggestion_Keywords | Neuron_Suggestion_Keywords   |
-|                         | Paq2piq Class              |                            |                              | Neuron_Focus                 |
-|                         | Rescaled_Paq2piq Class     |                            |                              | Neuron_Cognitive Demand      |
-|                         |                            |                            |                              | Neuron_Clarity               |
-|                         |                            |                            |                              | Neuron_Engagement            |
+| **Core Metadata**       | **Image Quality**          | **Initial Keyword**       | **Manual Enhanced Keyword**    | **Neuron Processed Keyword**      | **Cognitive Metrics**         |
+|-------------------------|----------------------------|----------------------------|------------------------------|------------------------------|------------------------------|
+| Image_Name              | NIMA Model Score           | Strengths                  | HyperParameter_Strengths     | Neuron_Strengths             | Neuron_Focus                 |
+| Folder_Name             | Rescaled_NIMA Score        | Strengths_Keywords         | HyperParameter_Strengths_Keywords | Neuron_Strengths_Keywords    | Neuron_Cognitive Demand      |
+| Store_Name              | Paq2piq Avg Local Score    | Human Eye Focus            | HyperParameter_Human Eye Focus | Neuron_Heatmap_Observations  | Neuron_Clarity               |
+| Store_Category          | Rescaled_Paq2piq Local     | Human Eye Focus_Keywords   | HyperParameter_Human Eye Focus_Keywords | Neuron_Heatmap_Observations_Keywords | Neuron_Engagement          |
+| Store_Location          | Paq2piq Global Score       | Suggestion                 | HyperParameter_Suggestion    | Neuron_Suggestion            |                              |
+|                         | Rescaled_Paq2piq Global    | Suggestion_Keywords        | HyperParameter_Suggestion_Keywords | Neuron_Suggestion_Keywords   |                              |
+|                         | Paq2piq Class              |                            |                              |                              |                              |
+|                         | Rescaled_Paq2piq Class     |                            |                              |                              |                              |
 ---
 ### Neuron AI Processed Image
 ![IMG_7515](https://github.com/user-attachments/assets/c5b47e22-9a7b-48a9-892d-e7ba4444f79f)
