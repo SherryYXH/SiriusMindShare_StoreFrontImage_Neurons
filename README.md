@@ -16,7 +16,7 @@ This phase focuses on **validating AI models** that predict storefront improveme
 - **Image Quality Tier Evaluation**: Poor → Excellent performance grading  
 - **Neuron-Enhanced Predictions**: Attention heatmap-driven features  
 - **Model Benchmarking**: XGBoost vs. Random Forest vs. Logistic Regression  
----
+
 ### 🔧 Methodology
 #### Model Implementation
 | Model | Strength | Use Case |
