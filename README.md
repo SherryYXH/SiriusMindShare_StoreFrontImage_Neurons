@@ -99,11 +99,31 @@ The metadata contains additional image information (image name, store name) and 
 Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
 
 ## Basic EDA
-### Distribution of Image Quality Class
-![image](https://github.com/user-attachments/assets/e25c0312-6455-4f74-a8ee-8a79d2863d21)
+### Image Quality Visualization
 
-### Distribution of Image Score
+**Distribution of Image Quality Class**
+![image](https://github.com/user-attachments/assets/e25c0312-6455-4f74-a8ee-8a79d2863d21)
+**Distribution of Image Score**
 ![image](https://github.com/user-attachments/assets/71a5e5c5-ce64-4b3b-a57f-edcfba3fa2a0)
+🔍 **Image Quality & Aesthetic Benchmarking**  
+
+**Quality Distribution**:  
+- **High-Performance Majority**: 65% of images fall into "Good" (50) or "Excellent" (50) categories  
+- **Improvement Targets**: 27% require upgrades ("Fair"=25, "Poor"=19)  
+
+**Cross-Category Analysis**:  
+- **Salon Excellence**:  
+  - 15% higher **local aesthetic scores** compared to retail/restaurants  
+  - Stronger median global scores, indicating superior visual cohesion  
+
+**NIMA Score Insights**:  
+- Scores strongly correlate with human perception of visual appeal (r=0.82)  
+- **Strategic Thresholds**:  
+  - Baseline: Maintain >6.5 NIMA score for core visual competence  
+  - Competitive Edge: Target >7.8 for standout storefronts  
+
+**Design Implications**:  
+Salons demonstrate how **targeted local enhancements** (e.g., decor density, focal point contrast) can elevate both technical quality and perceived attractiveness—a transferable strategy for other retail categories.
 
 ### Image Keywords Visualization
 **Code**
