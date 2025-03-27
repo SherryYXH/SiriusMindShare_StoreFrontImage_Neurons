@@ -93,7 +93,47 @@ These stores are located in the Bay Area of ​​California, including San Jose
 ### Metadata
 The metadata contains additional image information (image name, store name) and store attributes (such as store name, category, geographical location, etc.), image quality scores (such as NIMA Score, Paq2piq Scores), and related image keywords (Strength, Human Eyes Focus, Suggestions) for subsequent analysis. 
 
-![image](https://github.com/user-attachments/assets/e5275bbd-e96e-4a9b-ba18-0cfc8dbbf30e)
+**Dataset Variables Overview**
+
+| **Category**           | **Field Name**                                  |
+|------------------------|------------------------------------------------|
+| **Core Metadata**      | Image_Name                                     |
+|                        | Folder_Name                                    |
+|                        | Store_Name                                     |
+|                        | Store_Category                                 |
+|                        | Store_Location                                 |
+| **Image Quality**      | NIMA Model Score                               |
+|                        | Rescaled_NIMA Score                            |
+|                        | Paq2piq Average Local Score                    |
+|                        | Rescaled_Paq2piq Average Local Score           |
+|                        | Paq2piq Normalized Global Score                |
+|                        | Rescaled_Paq2piq Normalized Global Score       |
+|                        | Paq2piq Class                                  |
+|                        | Rescaled_Paq2piq Class                         |
+| **Keyword Analysis**   | Strengths                                      |
+|                        | Strengths_Keywords                             |
+|                        | Human Eye Focus                                |
+|                        | Human Eye Focus_Keywords                       |
+|                        | Suggestion                                     |
+|                        | Suggestion_Keywords                            |
+| **HyperParameter**     | HyperParameter_Strengths                       |
+|                        | HyperParameter_Strengths_Keywords              |
+|                        | HyperParameter_Human Eye Focus                 |
+|                        | HyperParameter_Human Eye Focus_Keywords        |
+|                        | HyperParameter_Suggestion                      |
+|                        | HyperParameter_Suggestion_Keywords             |
+| **Neuron Analysis**    | Neuron_Strengths                               |
+|                        | Neuron_Strengths_Keywords                      |
+|                        | Neuron_Heatmap_Observations                    |
+|                        | Neuron_Heatmap_Observations_Keywords           |
+|                        | Neuron_Suggestion                              |
+|                        | Neuron_Suggestion_Keywords                     |
+|                        | Neuron_Focus                                   |
+|                        | Neuron_Cognitive Demand                        |
+|                        | Neuron_Clarity                                 |
+|                        | Neuron_Engagement                              |
+
+---
 ### Neuron AI Processed Image
 ![IMG_7515](https://github.com/user-attachments/assets/c5b47e22-9a7b-48a9-892d-e7ba4444f79f)
 Examples:  Storefront Image Prior Version(left) and Post Neurons Version(right)
