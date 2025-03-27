@@ -1,5 +1,5 @@
 # LATENT DISPLAY TOPIC PREDICTIVE MODELS
-Table of Contents
+## 🔍 Table of Contents
 1. Overview
 2. Necessary Libraries
 3. Data Collection
@@ -7,30 +7,32 @@ Table of Contents
 5. Label Prediction Model
 6. Model Performance
 
-## Overview
-This phase of the research focuses on validating the label prediction models used to classify storefront neuron improvement suggestions. By evaluating multiple classification models, the goal is to determine the most effective approach for predicting enhancement recommendations based on image and text features.
+## 📌 Overview
+This phase focuses on **validating AI models** that predict storefront improvement suggestions using **neuron-processed image insights** and textual features. Designed to empower small businesses with data-driven design optimizations.
 
-### Key features
-- Comparative analysis across 3 store categories (Retail, Restaurant, Salon)
-- Image quality-based perception evaluation
-- Latent topic modeling for design recommendations
-- Performance benchmarking of ML models
+## 🧰 Key Features
+- **Cross-Category Analysis**: Retail/Restaurant/Salon comparisons  
+- **Image Quality Tier Evaluation**: Poor → Excellent performance grading  
+- **Neuron-Enhanced Predictions**: Attention heatmap-driven features  
+- **Model Benchmarking**: XGBoost vs. Random Forest vs. Logistic Regression  
 
-### Methodology
-Model Training & Prediction:
-Implementing three classification models:
-- Logistic Regression
-- Random Forest
-- XGBoost
-Training models on extracted image features and text features.
+## 🔧 Methodology
+### Model Implementation
+| Model | Strength | Use Case |
+|-------|----------|----------|
+| **XGBoost** | High accuracy | Final deployment |
+| **Random Forest** | Feature interpretability | Diagnostic analysis | 
+| **Logistic Regression** | Baseline performance | Quick prototyping |
 
-Model Optimization：
-Identify the best hyperparameters for different classification models using Grid Search with Cross-Validation. 
+### ⚙️ Optimization
+- **Grid Search** with 5-fold cross-validation  
+- **Hyperparameter Tuning**: max_depth (XGBoost), n_estimators (Random Forest)  
+- **Class Weight Balancing** for imputed suggestion categories
 
-Performance Evaluation:
-- ROC-AUC Analysis: Measuring model discrimination ability for multi-class classification.
-- Confusion Matrix & Classification Report: Identifying misclassification patterns and precision-recall trade-offs.
-- Feature Analysis: Interpreting key contributors to model decisions.
+### 🏆 Performance Evaluation:
+- **ROC-AUC Analysis**: Measuring model discrimination ability for multi-class classification.
+- **Confusion Matrix & Classification Report**: Identifying misclassification patterns and precision-recall trade-offs.
+- **Feature Analysis**: Interpreting key contributors to model decisions.
 
 ### Expected Outcomes
 - Validation of model effectiveness in predicting neuron improvement suggestions.
