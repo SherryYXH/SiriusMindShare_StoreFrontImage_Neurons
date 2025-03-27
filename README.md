@@ -427,6 +427,17 @@ def train_evaluate_and_visualize(X, y, topic_name):
 #### Mutual Information Scores Of Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/6127cabc-e239-4689-b618-9b0591ed9656)
 
+**Feature Contribution Ranking**
+
+| Feature                     | Contribution Score |
+|-----------------------------|--------------------|
+| **Neuron_Engagement**       | 0.42               |
+| **Neuron_Focus**            | 0.38               |
+| **Neuron_Clarity**          | 0.12               |
+| **Neuron_Cognitive Demand** | 0.07               |
+
+*Normalized mutual information scores (0-0.5 scale)*
+
 #### Post Topics Prediction Model Without All Four Neuron_* Variables
 ![image](https://github.com/user-attachments/assets/9acd551e-cd0f-4063-a071-f11520411859)
 #### Post Topics Prediction Model Without Clarity & Cognitive Demand
@@ -446,17 +457,9 @@ def train_evaluate_and_visualize(X, y, topic_name):
 | **Logistic Regression** | 38.6%            | 38.6%          | 0.5303       | 0.5715     | 0%         | +7.8%  |
 
 ### Key Findings:
-1. **XGBoost Dominance**  
+**XGBoost Dominance**  
    - Achieves highest absolute performance (78.3% AUC)  
    - Shows strongest improvement from neuron features (+40% AUC)
-
-2. **Neuron Feature Impact**  
-| Feature               | Contribution Score | 
-|-----------------------|--------------------|
-| **Neuron_Engagement**         | 0.42               |
-| **Neuron_Focus**         | 0.38               |
-| **Neuron_Clarity**         | 0.12               |
-| **Neuron_Clarity**         | 0.07               |
 
 Based on the label predictions results above and the mutual information score analysis,  had already highlighted the predictive power of Neuron_Focus and Neuron_Engagement, suggesting their strong association with consumer attention. Neuron_Focus and Neuron_Engagement Features have demonstrated strong predictive value and should be prioritized in feature selection. Using neuron-processed image features is crucial for improving predictive accuracy and should be incorporated into future models. This label prediction study demonstrated that incorporating neuron-based features enhances the accuracy of front door image label prediction models. By using machine learning techniques and feature engineering, we identified key variables that contribute to effective classification. 
 
